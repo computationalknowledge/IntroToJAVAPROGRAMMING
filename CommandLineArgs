@@ -1,6 +1,26 @@
 public class Yellow{
 	
 	public static void main(String [] args){
-		System.out.println(args[0] + " " + args[1]);
+		System.out.println("Starting program run...");
+		Purple cat = new Purple();
+		String [] b = new String[5];
+		b = cat.displayCommandLineArguments(args);
+		int y = b.length-1;
+
+		while(y>=0){
+			System.out.println(b[y--]);
+		}
+	}
+}
+
+class Purple{
+
+	public String[] displayCommandLineArguments(String [] m){
+		String [] a = new String [5];
+		for(int counter = 0 ; counter < m.length ; counter++) {
+			// System.out.println(m[counter]);
+			a[counter] = m[counter];
+		}
+		return a;
 	}
 }
