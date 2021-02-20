@@ -1,0 +1,36 @@
+public class MainApplication{
+		public static void main(String [] args){
+			StudentCenter sc = new StudentCenter();
+			sc.ApplicationManager();
+	}
+}
+
+class StudentCenter{
+	public void ApplicationManager(){
+		this.PutStudentsIntoGroups();
+	}
+
+	public void PutStudentsIntoGroups(){
+		Group g = new Group();
+		g.GroupName ="G2";
+		g.students
+	}
+}
+
+class Program{
+	Group g = new Group();
+}
+
+class Group{
+	public String GroupName;
+	// Use Composition to put students into this Group
+	
+	Student[] students = new Student[5];
+}
+
+class Student{
+	String studentname;
+	String studentID;
+	String Term;
+	String Program;
+}
